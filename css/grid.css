@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 80px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  width: 90%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "a1 a1 a2 a2"
+                       "a1 a1 a3 a4"
+                       "a1 a1 a5 a5";
+  gap: 5px;
+}
+
+.box1 {
+  grid-area: a1;
+  background: red;
+}
+.box2 {
+  grid-area: a2;
+  background: blue;
+}
+.box3 {
+  grid-area: a3;
+  background: green;
+}
+.box4 {
+  grid-area: a4;
+  background: pink;
+}
+.box5 {
+  grid-area: a5;
+  background: grey;
+}

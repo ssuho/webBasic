@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 100px;
+  margin: 80px;
 }
 
 .container {
@@ -20,13 +20,55 @@ body {
 
 .group1 {
   background-color: gold;
-  flex: 1 1 500px;
+  flex-basis: 500px;
 }
 .group2 {
   background-color: aqua;
-  flex: 1 2 1200px;
+  flex-basis: 500px;
 }
 .group3 {
   background-color: lightgreen;
-  flex: 1 1 300px;
+  flex-basis: 500px;
+}
+
+
+.box {
+  border: 5px solid red;
+  width: 1000px;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+}
+
+[class*="box-inner"] {
+  border: 5px solid blue;
+  flex: 1 1 200px;
+
+}
+
+.box-inner1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 500px;
+}
+
+.box-inner2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.box1 {
+  flex: 0 1 100%;
+}
+.box2 {
+  flex: 0 1 50%;
+}
+.box3 {
+  flex: 0 1 50%;
+}
+.box4 {
+  flex: 0 1 100%;
 }
